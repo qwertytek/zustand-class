@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import './App.css'
-import Parent from './parent'
-import useCounterStore from './store/counter'
+import useCounterStore from '@/store/counter'
+import Parent from '@/parent'
+import '@/App.css'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,16 +14,13 @@ function App() {
       <div className="card">
         <button onClick={() => {
           setCount((count) => count + 1)
-          addCounter(10);
+          addCounter(10)
           removeCounter()
         }}
         >
           count is {count}
         </button>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
       <Parent
         counterValue={count}
       />

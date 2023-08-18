@@ -1,4 +1,4 @@
-import useCounterStore from '../../../store/counter'
+import useCounterStore from '@/store/counter'
 
 interface GrandchildProps {
     counterValue: number;
